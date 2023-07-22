@@ -8,7 +8,7 @@ import React from 'react'
  * 然后插入到页面上某个特定的元素上
  */
 import ReactDOM from 'react-dom'
-import App from './01-base/01-class组件';
+import App from './01-base/02-函数式组件';
 ReactDOM.render(<App />, document.getElementById("root"));
 // ReactDOM.render(
 //   // （标签名，属性，子节点）
