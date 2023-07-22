@@ -8,8 +8,10 @@ import React from 'react'
  * 然后插入到页面上某个特定的元素上
  */
 import ReactDOM from 'react-dom'
-ReactDOM.render(
-  // jsx = js + xml
-  <h1>欢迎来到React的世界！！！</h1>,
-  document.getElementById('root')
-);
+import App from './01-base/01-class组件';
+ReactDOM.render(<App />, document.getElementById("root"));
+// ReactDOM.render(
+//   // （标签名，属性，子节点）
+//   ("div", { id: "aaa", className: "bbb" }, '111'),
+//   document.getElementById('root')
+// );
