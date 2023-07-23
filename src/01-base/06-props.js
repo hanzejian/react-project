@@ -36,6 +36,7 @@ export default class App extends Component {
         <Navbar
           title={title}
           subTitle={subTitle}
+          thirdTitle={'4'}
         ></Navbar>
       </div>
     )

@@ -1,6 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropsType from "prop-types";
 
 export default class Navbar extends Component {
+  static propTypes = {
+    title: PropsType.string,
+    subTitle: PropsType.string,
+    thirdTitle: PropsType.oneOf(['1', '2', '3'])
+  }
+  static defaultProps = {
+    title: 'title',
+    subTitle: 'subTitle'
+  }
   constructor (props) {
     super(props);
     this.state = {
@@ -12,14 +22,15 @@ export default class Navbar extends Component {
     }
   }
   render() {
-    const { title } = this.props;
+    console.log(PropsType, 'PropsType')
+    const { title, thirdTitle } = this.props;
     const { subTitle } = this.state;
     return (
       <div>
         <h1>{title}</h1>
         <h3>{subTitle}</h3>
+        <h3>oneOf:{thirdTitle}</h3>
       </div>
-      
     )
   }
 }
